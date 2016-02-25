@@ -1,0 +1,136 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+    "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd"> 
+<html dir="ltr" lang="en-US" xmlns="http://www.w3.org/1999/xhtml">
+
+	
+<!-- Mirrored from www.nicolaegabriel.info/live/admin-pure/ by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 20 Feb 2016 22:21:15 GMT -->
+<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+		<title>HTML - Admin Pure</title>
+		
+		<link rel='stylesheet' href="{{ asset('publicAdmin/_layout/scripts/jquery.fullcalendar/fullcalendar.css')}}" type='text/css' media='screen' />
+		<link rel='stylesheet' href="{{ asset('publicAdmin/_layout/scripts/jquery.fullcalendar/fullcalendar.print.css')}}" type='text/css' media='print' />
+		
+		<!-- Styles -->
+		<link rel='stylesheet' href="{{ asset('publicAdmin/_layout/style.css')}}" type='text/css' media='all' />
+		
+		<!--[if IE]>
+		
+			<link rel='stylesheet' href="{{ asset('publicAdmin/_layout/IE.css')}}" type='text/css' media='all'')}}" />		
+			
+		<![endif]-->
+		
+		<!-- Fonts -->
+		<link href="{{ asset('http://fonts.googleapis.com/css?family=Droid+Sans:regular,bold|PT+Sans+Narrow:regular,bold|Droid+Serif:i&amp;v1')}}" rel='stylesheet' type='text/css' />
+		
+		<script type='text/javascript' src='../../../ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min97e1.js?ver=1.7'></script>
+		<script type="" src="../../../ajax.googleapis.com/ajax/libs/jqueryui/1.8.23/jquery-ui.min.js"></script>
+		
+		<!-- Calendar -->
+		<script type='text/javascript' src='publicAdmin/_layout/scripts/jquery.fullcalendar/fullcalendar.min.js'></script>
+		
+		<!-- Scripts -->
+		<script type='text/javascript' src='publicAdmin/_layout/custom.js'></script>
+		
+	</head>  
+  
+	<body>
+	 
+		<div id="layout">
+			<div id="header-wrapper">
+				<div id="header">
+					<div id="user-wrapper" class="fixed">
+						<div class="color-scheme">
+							<a href="#" class="button">Dropdown suggestion</a>
+						</div>
+						<div class="user">
+							<img src="{{ asset('publicAdmin/_content/user-img.png')}}" alt="" />
+							<span>Welcome <a href="#">Owsian !</a></span>
+							<span class="logout"><a href="#">Logout</a></span>
+						</div>
+					</div>
+					
+					<div id="launcher-wrapper" class="fixed">
+						<div class="logo">
+							<a href="{{ asset('index-2.html')}}"><img src="{{ asset('publicAdmin/_content/back-logo.png')}}" alt="" /></a>
+						</div>
+						
+						<div class="launcher">
+							<ul class="fixed">
+								<li class="users"><a href="#">Users</a></li>
+								<li class="mailbox">
+									<a href="#">Mailbox</a>
+									<span class="red-bullet"></span>
+								</li>
+								<li class="dialog"><a href="#">Dialog</a></li>
+								<li class="settings last"><a href="#">Settings</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div class="page fixed">
+				<div id="sidebar">
+					<ul id="navigation">
+						<li class="first active">
+							<div><a href="{{ asset('index-2.html')}}">Dashboard</a><span class="icon-nav dashboard"></span></div>
+							<div class="back"></div>
+						</li>
+						<li>
+							<div><a href="{{ asset('calendar.html')}}">Calendar</a><span class="icon-nav calendar"></span><span>125</span></div>
+							<div class="back"></div>
+						</li>
+						<li>
+							<div><a href="{{ asset('interface-elements.html')}}">Interface Elements</a><span class="icon-nav interface-elements"></span></div>
+							<div class="back"></div>
+						</li>
+						<li>
+							<div><a href="{{ asset('form-elements.html')}}">Form Elements</a><span class="icon-nav form-elements"></span></div>
+							<div class="back"></div>
+						</li>
+						<li>
+							<div><a href="#">Settings</a><span class="icon-nav settings"></span></div>
+							<div class="back"></div>
+						</li>
+						<li>
+							<div><a href="{{ asset('typography.html')}}">Typography</a><span class="icon-nav typography"></span></div>
+							<div class="back"></div>
+						</li>
+						<li>
+							<div><a href="{{ path('user')}}">Tables</a><span class="icon-nav tables"></span></div>
+							<div class="back"></div>
+						</li>
+						<li>
+							<div><a href="{{ asset('gallery.html')}}">Gallery</a><span class="icon-nav gallery"></span></div>
+							<div class="back"></div>
+						</li>
+						<li class="last">
+							<div><a href="#">Users</a><span class="icon-nav users"></span></div>
+							<div class="back"></div>
+						</li>
+					</ul>
+				</div>
+				
+				
+				{% block body %}
+        {% endblock %}
+                                                        
+				
+			</div>
+		</div>
+
+	
+	
+	
+	 
+	</body>
+
+
+<!-- Mirrored from www.nicolaegabriel.info/live/admin-pure/ by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 20 Feb 2016 22:22:20 GMT -->
+</html>
+	

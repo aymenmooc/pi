@@ -1,0 +1,61 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Welcome</title>
+  <meta name="description" content="Description of your site goes here">
+  <meta name="keywords" content="keyword1, keyword2, keyword3">
+  <link href="{{asset('css/style.css')}}" rel="stylesheet" type="text/css">
+</head>
+<body>
+<div id="main-wraper">
+<div id="top-wraper">
+<div id="banner">Gestion du stock </div>
+<div id="nav">
+<ul>
+  <li><a href="{{path("AffichageLot")}}">Accueil</a></li>
+  <li><a href="{{path("RechercheLot")}}">Recherche</a></li>
+  <li><a href="#">Contact</a></li>
+</ul>
+</div>
+</div>
+<div id="mid-wraper">
+<div class="mid-wraper-top">
+<div class="mid-leftouter">
+<div class="mid-left-container">
+    
+{% block content %}
+    
+     {% endblock %}
+   
+</div>
+<div class="mid-left-container" style="margin-top: 10px;">
+<div class="inner-left">
+<h2> <span class="yellow-heading"></span></h2>
+<div style="border-right: 1px solid rgb(153, 153, 153); width: 294px; float: left; padding-right: 12px;">
+{% block promotion %}
+    
+     {% endblock %}
+
+    <strong><a href="#" class="read-more"></a></strong></div>
+</div>
+
+</div>
+</div>
+
+<div class="mid-wraper-bttm"><img src="{{asset('images/mid-bttm.jpg')}}" alt=""></div>
+</div>
+<div class="footer">
+<div class="footer-side"><a href="#">Home</a> <a href="#">About us</a> <a href="#">Recent articles</a> <a href="#">Email</a> <a href="#">Resources</a>
+<a href="#">Links</a></div>
+
+<!--DO NOT Remove The Footer Links-->
+<!--Designed by--><a target="_blank" href="http://www.htmltemplates.net">
+<img src="{{asset('images/design.gif')}}" class="copyright" alt="htmltemplates.net"></a>
+<div class="footer-right">&copy; Copyright 2014. Designed by <a target="_blank" href="http://www.htmltemplates.net">htmltemplates.net</a>
+<!--DO NOT Remove The Footer Links-->
+
+</div>
+</div>
+</div>
+
+</body></html>

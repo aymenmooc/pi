@@ -1,0 +1,62 @@
+my_app_user_user:
+    resource: "@MyAppUserBundle/Resources/config/routing/user.yml"
+    prefix:   /user
+
+my_app_user_homepage:
+    path:     /hello/{name}
+    defaults: { _controller: MyAppUserBundle:Default:index }
+AffichageLot:
+    path:     /affichage
+    defaults: { _controller: MyAppUserBundle:User:affichage }            
+user:
+    path:     /888
+    defaults: { _controller: "MyAppUserBundle:User:index" }
+
+user_show:
+    path:     /{id}/show
+    defaults: { _controller: "MyAppUserBundle:User:show" }
+
+user_new:
+    path:     /new
+    defaults: { _controller: "MyAppUserBundle:User:new" }
+
+user_create:
+    path:     /create
+    defaults: { _controller: "MyAppUserBundle:User:create" }
+    methods:  POST
+
+user_edit:
+    path:     /{id}/edit
+    defaults: { _controller: "MyAppUserBundle:User:edit" }
+
+user_update:
+    path:     /{id}/update
+    defaults: { _controller: "MyAppUserBundle:User:update" }
+    methods:  [POST, PUT]
+
+user_delete:
+    path:     /{id}/delete
+    defaults: { _controller: "MyAppUserBundle:User:delete" }
+    methods:  [POST, DELETE]
+afficherFormateur:
+    path:     /comite/affiche
+    defaults: { _controller: "MyAppUserBundle:User:afficherFormateur" }
+promoteFormateurEnComite:
+    path:     /comite/role
+    defaults: { _controller: "MyAppUserBundle:User:promoteFormateurEnComite" }
+adminhello:
+    path:     /comite/hello
+    defaults: { _controller: "MyAppUserBundle:User:adminhello" }    
+
+afficherEtatCompte:
+    path:     /comite/afficherEtatCompte
+    defaults: { _controller: "MyAppUserBundle:User:afficherEtatCompteFormateur" }   
+ValiderFormateurComite:
+    path:     /comite/ValiderFormateurComite/{id}
+    defaults: { _controller: "MyAppUserBundle:User:ValiderFormateurComite" }      
+home_page:
+    path:     /hello
+    defaults: { _controller: MyAppUserBundle:Default:index }
+inscription:
+    path:     /inscription
+    defaults: { _controller: MyAppUserBundle:Default:index2 }
